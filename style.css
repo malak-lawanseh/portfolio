@@ -1,0 +1,123 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/me.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top center;
+    position: relative;
+    
+    z-index: 1;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7; 
+    z-index: -1;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:45px ;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+    
+    
+}
+span{
+    color: rgb(207, 41, 97);
+}
+#logoplace:hover{
+    transform: translate(0, -5px);
+    transition: .2s;
+    
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+  
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.btn{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 10px;
+    
+    
+}
+.btn:after,nav ul li a:after{
+    content: '';
+    position: absolute;
+    background-color: rgb(207, 41, 97);
+    height: 3px;
+    width: 0px;
+    left: 0px;
+    bottom: -10px; 
+}
+.btn:hover:after,nav ul li a:hover:after{
+    transition: .5s;
+    width: 100%;
+}
+.content{
+    position:absolute;
+    top: 50%;
+    left: 8%;
+    transform:translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 75px;
+    font-family: 'Varela Round', sans-serif;
+    
+     
+} 
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: rgba(245, 46, 112, 0.8);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+
+img{
+    transform: translate(100px, 200px);
+    height: 500px;
+    width: 400px;
+}
