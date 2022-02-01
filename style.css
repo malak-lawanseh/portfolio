@@ -14,7 +14,9 @@
     background-repeat:no-repeat;
     background-size: cover;
     background-position:top center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     
     z-index: 1;
 }
