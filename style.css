@@ -30,6 +30,34 @@
     background-color: black;
     opacity: .7; 
     z-index: -1;
+    transition: .5s;
+
+}
+
+.hero2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/me.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    z-index: 1;
+}
+.hero2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .97; 
+    z-index: -1;
+    transition: .5s;
 }
 nav{
     display: flex;
@@ -103,7 +131,7 @@ h1{
     font-size: 75px;
     font-family: 'Varela Round', sans-serif;
     letter-spacing: .05px;
-    cursor: pointer;
+    cursor: grabbing;
      
 } 
 h3{
@@ -163,3 +191,20 @@ h1 span:hover{
         transform: scale3d(1, 1, 1);
       }
     } 
+
+    #aboutme{
+        width:50% ;
+        color: white;
+        font-size: 31px;
+        cursor: grabbing;
+    }
+    #aboutme h2 span{
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+        display: inline-block;
+    }
+    #aboutme h2 span:hover{
+        color:rgba(245, 46, 112, 0.8) ;
+        animation-name: rubberBand;
+    }
