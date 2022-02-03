@@ -7,7 +7,7 @@ This is my protfolio i made it to add new project idea on it as backup
 ![protfolio img](img/protfolio.png )
 
 ## technology used 
-The language i have used to make this protfolio was HTML and CSS 
+The language i have used to make this protfolio was HTML, CSS and js
 
 
 ## Resources
